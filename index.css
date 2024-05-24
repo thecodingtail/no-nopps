@@ -1,0 +1,169 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+.cards {
+  border-color: black;
+  border: solid;
+  text-align: center;
+  margin: 0.4dvh 1dvw;
+  position: relative;
+  border-radius: 10px;
+}
+.servis {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  max-width: 500px;
+  justify-content: center;
+}
+
+.cards > p {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.cards > img {
+  height: 12dvh;
+  width: 12dvh;
+  object-fit: cover;
+}
+.navbar-top {
+  display: flex;
+  justify-content: end;
+}
+.navbar-top > button {
+  padding: 20px 20px;
+  display: block;
+  position: absolute;
+  border: none;
+  background-color: rgb(175, 250, 219);
+  border-radius: 20px;
+  z-index: 100000;
+}
+.animation-shrink {
+  animation: ShrinkNow 1s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
+}
+
+@keyframes ShrinkNow {
+  from {
+    width: 90dvw;
+    height: 90dvh;
+  }
+
+  to {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+#expand-on-click {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+
+  display: block;
+  right: 25px;
+  z-index: 9999;
+  background-image: url(bilder/Skärmklipp.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 700px;
+  max-height: 1200px;
+}
+
+.animation-grow {
+  animation: GrowNow 1s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
+}
+
+@keyframes GrowNow {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+
+  to {
+    width: 90dvw;
+    height: 90dvh;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  top: 10px;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.navbar > a {
+  padding: 20px 35px;
+  background-color: rgb(58, 66, 66);
+  color: whitesmoke;
+  text-decoration: none;
+
+  text-align: center;
+
+  display: inline-block;
+  border: 2px solid rgb(153, 196, 231);
+}
+
+.cards-container {
+  bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cashout {
+  display: flex;
+
+  overflow: hidden;
+  justify-content: center;
+  position: relative;
+  height: 12dvh;
+}
+
+.cashout > img {
+  width: 11dvw;
+  height: 12dvh;
+}
+
+.text-cashout > div > p {
+  display: inline;
+  padding: 0px;
+}
+.text-cashout > div {
+  position: relative;
+}
+.down {
+  bottom: 0px;
+  align-self: flex-start;
+  margin-left: -20px;
+  font-size: 1.5rem;
+}
+.up {
+  top: 0px;
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+
+.text-cashout {
+  position: relative;
+  height: 100%;
+  height: 12dvh;
+  display: flex;
+}
+
+.up,
+.down {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}

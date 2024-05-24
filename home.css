@@ -1,0 +1,27 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.navbar > a {
+  padding: 20px 35px;
+  background-color: rgb(58, 66, 66);
+  color: whitesmoke;
+  text-decoration: none;
+
+  text-align: center;
+
+  display: inline-block;
+  border: 2px solid rgb(153, 196, 231);
+}
+
+.cards-container {
+  bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
