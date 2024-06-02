@@ -42,13 +42,13 @@ body {
   z-index: 100000;
 }
 .animation-shrink {
-  animation: ShrinkNow 1s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
+  animation: ShrinkNow 0.5s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
 }
 
 @keyframes ShrinkNow {
   from {
     width: 90dvw;
-    height: 90dvh;
+    height: 1000vh;
   }
 
   to {
@@ -73,7 +73,7 @@ body {
 }
 
 .animation-grow {
-  animation: GrowNow 1s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
+  animation: GrowNow 0.5s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
 }
 
 @keyframes GrowNow {
@@ -84,7 +84,7 @@ body {
 
   to {
     width: 90dvw;
-    height: 90dvh;
+    height: 1000dvh;
   }
 }
 h1 {
@@ -123,16 +123,18 @@ h1 {
 
 .cashout {
   display: flex;
-
+  flex-direction: column;
   overflow: hidden;
-  justify-content: center;
+  align-items: center;
   position: relative;
-  height: 12dvh;
 }
 
 .cashout > img {
-  width: 11dvw;
-  height: 12dvh;
+  width: 200px;
+  height: 200px;
+  border-right: 2px black dashed;
+  border-left: 2px black dashed;
+  border-top: 2px black dashed;
 }
 
 .text-cashout > div > p {
@@ -140,30 +142,25 @@ h1 {
   padding: 0px;
 }
 .text-cashout > div {
-  position: relative;
-}
-.down {
-  bottom: 0px;
-  align-self: flex-start;
-  margin-left: -20px;
-  font-size: 1.5rem;
+  text-align: center;
+  width: 200px;
+  border-right: 2px black dashed;
+  border-left: 2px black dashed;
+  border-bottom: 2px black dashed;
+  background: rgb(178, 255, 156);
+  background: linear-gradient(
+    162deg,
+    rgba(178, 255, 156, 1) 10%,
+    rgba(2, 255, 111, 1) 100%
+  );
 }
 .up {
-  top: 0px;
-  align-self: flex-end;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
-.text-cashout {
-  position: relative;
-  height: 100%;
-  height: 12dvh;
-  display: flex;
-}
-
-.up,
-.down {
-  position: absolute;
-  width: 100%;
-  left: 0;
+.buy-btn {
+  border: none;
+  padding: 20px 35px;
+  font-size: 2rem;
+  font-weight: 700;
 }
