@@ -6,6 +6,7 @@ body {
 
 .whole-screen {
   background: rgb(147, 250, 240);
+  margin-top: 0px;
 }
 .cards {
   border-color: black;
