@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: rgba(95, 149, 255, 1);
+}
+#expand-on-click {
+  position: absolute;
+  width: 100dvw;
+  height: 100dvh;
+  display: block;
+  right: auto;
+  left: auto;
+  z-index: 9999;
+}
+
+.cashout {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+
+  margin: 20px 0;
+}
+
+.cashout > img {
+  width: 200px;
+  height: 200px;
+  border-right: 2px black dashed;
+  border-left: 2px black dashed;
+  border-top: 2px black dashed;
+}
+
+.text-cashout > div > p {
+  display: inline;
+  padding: 0px;
+}
+.text-cashout > div {
+  text-align: center;
+  width: 200px;
+  border-right: 2px black dashed;
+  border-left: 2px black dashed;
+  border-bottom: 2px black dashed;
+  background: rgb(178, 255, 156);
+  background: linear-gradient(
+    162deg,
+    rgb(234, 255, 184) 10%,
+    rgb(243, 241, 235) 100%
+  );
+}
+.up {
+  font-size: 1.5em;
+}
+
+.buy-btn {
+  border: none;
+  padding: 20px 35px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  background-color: bisque;
+  text-decoration: none;
+  margin-top: 10px;
+}

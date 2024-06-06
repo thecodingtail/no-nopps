@@ -5,13 +5,7 @@ body {
 }
 
 .whole-screen {
-  background: rgb(95, 149, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(95, 149, 255, 1) 0%,
-    rgba(147, 209, 252, 1) 46%,
-    rgba(115, 255, 175, 1) 100%
-  );
+  background: rgb(147, 250, 240);
 }
 .cards {
   border-color: black;
@@ -53,38 +47,23 @@ body {
   border-radius: 20px;
   z-index: 100000;
 }
-.animation-shrink {
+/*.animation-shrink {
   animation: ShrinkNow 0.5s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
 }
 
 @keyframes ShrinkNow {
   from {
     width: 90dvw;
-    height: 1000vh;
+    height: 100vh;
   }
 
   to {
     width: 0px;
     height: 0px;
   }
-}
+}*/
 
-#expand-on-click {
-  width: 0px;
-  height: 0px;
-  position: absolute;
-
-  display: block;
-  right: 25px;
-  z-index: 9999;
-  background-image: url(bilder/Skärmklipp.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 700px;
-  max-height: 1200px;
-}
-
-.animation-grow {
+/*.animation-grow {
   animation: GrowNow 0.5s cubic-bezier(0.2, 0.59, 0.92, 0.75) 1 forwards;
 }
 
@@ -96,13 +75,17 @@ body {
 
   to {
     width: 90dvw;
-    height: 1000dvh;
+    height: 100dvh;
   }
+  
 }
+*/
 h1 {
   text-align: center;
-  font-size: 2rem;
-  top: 10px;
+  font-size: 3rem;
+  top: 0px;
+  position: relative;
+  margin: 10px;
 }
 
 .navbar {
@@ -114,7 +97,6 @@ h1 {
   flex-direction: row;
   width: 100%;
   z-index: 99999999999999999999999999999999999999999999999999;
-  
 }
 .navbar > a {
   padding: 20px 35px;
@@ -177,4 +159,14 @@ h1 {
   padding: 20px 35px;
   font-size: 2rem;
   font-weight: 700;
+}
+
+#shop-button {
+  position: absolute;
+  z-index: 99999;
+  top: 15px;
+  right: 6%;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgb(96, 228, 177);
 }
